@@ -1,0 +1,103 @@
+/* Font */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("fonts/GothamPro.eot") format("embedded-opentype"),
+    url("fonts/GothamPro.woff") format("woff"),
+    url("fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotham Pro";
+}
+
+.wrap-card {
+  width: 600px;
+  height: 600px;
+}
+
+.card {
+  position: absolute;
+  top: 87px;
+  left: 118px;
+  width: 335px;
+  height: 340px;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
+  -moz-box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
+  box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
+}
+
+.top-card {
+  height: 242px;
+  padding: 10px 21px 13px 21px;
+  background-image: url(card-img.png);
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flag {
+  width: 82px;
+  height: 23px;
+  text-align: center;
+  background-color: #ffc600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.flag::after {
+  position: absolute;
+  left: 0;
+  top: 23px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid #ffc600;
+  border-right: 6px solid transparent;
+}
+
+.flag > p {
+  color: #48494a;
+  font-size: 10px;
+}
+
+.company-name > h1 {
+  color: white;
+  font-size: 15px;
+}
+
+.bottom-card {
+  padding: 18px 0 24px 21px;
+}
+
+.address {
+  font-size: 14px;
+  color: #48494a;
+  margin-bottom: 16px;
+}
+
+.price > span {
+  background-color: #fffbd7;
+  font-size: 18px;
+  padding: 5px 17px 5px 5px;
+}
+
+.price > span:last-of-type {
+  color: #48494a;
+  background-color: inherit;
+  font-size: 12px;
+  margin-left: -4px;
+}
