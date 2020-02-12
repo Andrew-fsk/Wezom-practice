@@ -3,9 +3,20 @@
   font-family: "Gotham Pro";
   src: url("GothamPro.eot");
   src: local("Gotham Pro"), local("GothamPro"),
-    url("fonts/GothamPro.eot") format("embedded-opentype"),
-    url("fonts/GothamPro.woff") format("woff"),
-    url("fonts/GothamPro.ttf") format("truetype");
+    url("/fonts/GothamPro.eot") format("embedded-opentype"),
+    url("/fonts/GothamPro.woff") format("woff"),
+    url("/fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("/fonts/GothamPro-Bold.eot.eot") format("embedded-opentype"),
+    url("/fonts/GothamPro-Bold.woff") format("woff"),
+    url("/fonts/GothamPro-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,16 +37,17 @@ body {
 
 .card {
   width: 335px;
-  -webkit-box-shadow:0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
-  -moz-box-shadow:0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  -webkit-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  -moz-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
   box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
 }
 
 .top-card {
   height: 242px;
   padding: 10px 21px 0 21px;
-  background-image: url(card-img.png);
+  background-image: url(/img/card-img.png);
   position: relative;
+  font-family: "Gotham Pro Bold";
 }
 
 .top-card__label {
@@ -67,7 +79,7 @@ body {
   padding-bottom: 13px;
 }
 
-.company-name > h1 {
+.top-card__company-name {
   color: white;
   font-size: 15px;
   text-transform: uppercase;
@@ -77,27 +89,27 @@ body {
   padding: 18px 0 24px 21px;
 }
 
-.bottom-card__address {
-  margin-bottom: 16px;
-}
-
 .address {
   font-size: 14px;
   color: #48494a;
 }
 
-.price {
-  color: #48494a;
+.bottom-card__address {
+  margin-bottom: 16px;
 }
 
-.price > span {
+.price {
+  display: inline;
   background-color: #fffbd7;
   font-size: 18px;
   padding: 5px 17px 5px 5px;
 }
 
-.price > span:last-of-type {
-  background-color: inherit;
-  font-size: 12px;
-  margin-left: -4px;
+.price-text {
+  display: inline;
+  color: #48494a;
+}
+
+.bold-text {
+  font-family: "Gotham Pro Bold";
 }
