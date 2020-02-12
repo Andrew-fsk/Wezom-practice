@@ -17,52 +17,51 @@
 }
 
 body {
-  font-family: "Gotham Pro";
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Gotham Pro";
 }
 
 .card {
   width: 335px;
-  -webkit-box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
-  -moz-box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
-  box-shadow: 0 8px 6px -6px rgba(129, 129, 129, 0.2);
+  -webkit-box-shadow:0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  -moz-box-shadow:0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
 }
 
 .top-card {
   height: 242px;
   padding: 10px 21px 0 21px;
   background-image: url(card-img.png);
-  text-transform: uppercase;
-  font-weight: bold;
   position: relative;
 }
 
-.flag {
-  position: relative;
+.top-card__label {
+  display: inline-block;
   height: 23px;
+  padding: 0 8px;
   background-color: #ffc600;
   color: #48494a;
   font-size: 10px;
-  display: inline-block;
+  text-transform: uppercase;
   line-height: 23px;
-  padding: 0 8px;
+  position: relative;
 }
 
-.flag::after {
-  position: absolute;
-  left: 0;
-  top: 23px;
+.top-card__label::after {
   content: "";
   width: 0;
   height: 0;
   border-top: 6px solid #ffc600;
   border-right: 6px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 23px;
 }
 
-.company-name {
+.top-card__company-name {
   position: absolute;
   bottom: 0;
   padding-bottom: 13px;
@@ -71,16 +70,24 @@ body {
 .company-name > h1 {
   color: white;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 .bottom-card {
   padding: 18px 0 24px 21px;
 }
 
+.bottom-card__address {
+  margin-bottom: 16px;
+}
+
 .address {
   font-size: 14px;
   color: #48494a;
-  margin-bottom: 16px;
+}
+
+.price {
+  color: #48494a;
 }
 
 .price > span {
@@ -90,7 +97,6 @@ body {
 }
 
 .price > span:last-of-type {
-  color: #48494a;
   background-color: inherit;
   font-size: 12px;
   margin-left: -4px;
