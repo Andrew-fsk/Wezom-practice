@@ -3,9 +3,9 @@
   font-family: "Gotham Pro";
   src: url("GothamPro.eot");
   src: local("Gotham Pro"), local("GothamPro"),
-    url("/fonts/GothamPro.eot") format("embedded-opentype"),
-    url("/fonts/GothamPro.woff") format("woff"),
-    url("/fonts/GothamPro.ttf") format("truetype");
+    url("./../fonts/GothamPro-Bold.eot") format("embedded-opentype"),
+    url("./../fonts/GothamPro.woff") format("woff"),
+    url("./../fonts/GothamPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -14,9 +14,9 @@
   font-family: "Gotham Pro Bold";
   src: url("GothamPro.eot");
   src: local("Gotham Pro"), local("GothamPro"),
-    url("/fonts/GothamPro-Bold.eot.eot") format("embedded-opentype"),
-    url("/fonts/GothamPro-Bold.woff") format("woff"),
-    url("/fonts/GothamPro-Bold.ttf") format("truetype");
+    url("/./fonts/GothamPro-Bold.eot.eot") format("embedded-opentype"),
+    url("/./fonts/GothamPro-Bold.woff") format("woff"),
+    url("/./fonts/GothamPro-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -124,7 +124,7 @@ body {
 .top-card {
   height: 242px;
   padding: 10px 21px 0 21px;
-  background-image: url(/img/card-img.png);
+  background-image: url(/./img/card-img.png);
   position: relative;
   font-family: "Gotham Pro Bold";
 }
