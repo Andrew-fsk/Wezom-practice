@@ -30,9 +30,16 @@
 body {
   font-family: "Gotham Pro";
   background-color: #f0f0f0;
-  min-width: 1400px;
 }
 
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 130px;
+}
 .wrapper {
   background-color: #fff;
 }
@@ -40,6 +47,7 @@ body {
 .header {
   min-width: 1400px;
   width: 1400px;
+  height: 70px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -47,11 +55,11 @@ body {
 }
 
 .header__logo {
-  height: 55px;
+  height: 60px;
 }
 
 .header__menu {
-  margin: 25px 0 30px 0;
+  margin: 30px 0 25px 0;
 }
 
 .menu-list {
@@ -69,6 +77,17 @@ body {
 .menu-item__link {
   color: #48494a;
   text-decoration: none;
+}
+
+.menu-item__link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px red;
+  transform: scaleX(0);
+  transition: transform 0.15s ease-in-out;
+}
+.menu-item__link:hover:after {
+  transform: scaleX(1);
 }
 
 .menu-item:first-child {
@@ -102,10 +121,18 @@ body {
   color: #ffffff;
   font-size: 14px;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 10px 27px;
+  transition: all 0.25s ease-in-out;
+}
+
+.content__top-button:hover {
   box-shadow: 0px 13px 22.08px 1.92px rgba(250, 25, 25, 0.45);
   -webkit-box-shadow: 0px 13px 22.08px 1.92px rgba(250, 25, 25, 0.45);
   -moz-box-shadow: 0px 13px 22.08px 1.92px rgba(250, 25, 25, 0.45);
+}
+
+.content__top-button:active {
+  transform: scale(1.1);
 }
 
 .content__gallery {
@@ -155,6 +182,7 @@ body {
 .top-card__fav {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+  height: 28px;
   float: right;
 }
 
@@ -171,7 +199,7 @@ body {
 }
 
 .bottom-card {
-  padding: 18px 24px;
+  padding: 10px 20px;
   height: 98px;
 }
 
@@ -186,7 +214,7 @@ body {
 }
 
 .bottom-card__address {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   line-height: 28px;
 }
 
@@ -206,10 +234,6 @@ body {
   margin-left: 3px;
 }
 
-.address__price {
-  text-transform: uppercase;
-}
-
 .bottom-card__price {
   display: flex;
 }
@@ -219,12 +243,19 @@ body {
 }
 
 .footer {
+  height: 130px;
   width: 1400px;
   min-width: 1400px;
   margin: auto;
-  padding: 50px 120px;
+  padding: 45px 120px 25px 120px;
   display: flex;
   justify-content: space-between;
+}
+
+.wrapper-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .social__text {
@@ -234,16 +265,29 @@ body {
   margin-bottom: 15px;
 }
 
+.social__list {
+  height: 30px;
+}
+
 .social__link {
-  margin-right: 25px;
+  margin-right: 20px;
+}
+
+.social__link-last {
+  margin-right: 0;
 }
 
 .info {
   display: flex;
   align-items: center;
+  height: 35px;
 }
 
 .info__text {
+  font-size: 14px;
+}
+
+.info__text-tittle {
   color: #80868e;
   font-size: 12px;
 }
@@ -258,4 +302,10 @@ body {
 
 .info__img-foter {
   margin-right: 10px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  fill: #ffc600;
 }
