@@ -1,0 +1,46 @@
+/* Font */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("/fonts/GothamPro.eot") format("embedded-opentype"),
+    url("../fonts/GothamPro.woff") format("woff"),
+    url("./fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("./../fonts/GothamPro-Bold.eot.eot") format("embedded-opentype"),
+    url("../fonts/GothamPro-Bold.woff") format("woff"),
+    url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gotham Pro";
+  background-color: #f0f0f0;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 130px;
+}
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+}
