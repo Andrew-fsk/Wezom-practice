@@ -55,4 +55,13 @@
   .header__menu {
     margin: 0 0 15px 0;
   }
+  .menu-item__link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-item__link {
+    font-size: 0.5em;
+  }
 }

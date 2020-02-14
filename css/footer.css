@@ -1,5 +1,4 @@
 .footer {
-  height: 130px;
   max-width: 1400px;
   margin: auto;
   padding: 45px 120px 25px 120px;
@@ -63,6 +62,12 @@
   height: 30px;
   width: 30px;
   fill: #ffc600;
+  transition: all 0.15s ease-in-out;
+}
+
+.icon:hover {
+  fill: red;
+  transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
@@ -72,5 +77,23 @@
   .icon {
     height: 20px;
   }
-  
+}
+
+@media (max-width: 475px) {
+  .footer {
+    flex-direction: column;
+  }
+  .social__text {
+    text-align: center;
+  }
+  .social__list {
+    display: flex;
+    justify-content: center;
+  }
+  .social__link {
+    margin: 0 10px;
+  }
+  .info {
+    justify-content: center;
+  }
 }
