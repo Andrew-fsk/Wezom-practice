@@ -3,7 +3,6 @@
   width: 95%;
   margin: auto;
   padding-top: 43px;
-  padding-bottom: 120px;
 }
 
 .content__top {
@@ -42,6 +41,7 @@
 .content__gallery {
   width: 95%;
   margin: auto;
+  margin-bottom: 120px;
   display: flex;
   justify-content: space-between;
 }
@@ -138,7 +138,6 @@
 .bottom-card__icon-metro {
   height: 20px;
   width: 20px;
-  position: absolute;
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -170,6 +169,78 @@
 
 .bold-text {
   font-family: "Gotham Pro Bold";
+}
+
+.wrapper-promo {
+  background-color: inherit;
+}
+
+.promo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.content-promo {
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+
+.content-promo::after {
+  content: "";
+  width: 100vw;
+  height: 100%;
+  background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+}
+
+.action {
+  width: 72%;
+  background-color: #fafafa;
+  padding: 50px 80px 0 0;
+}
+
+.action__gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action__card {
+  max-width: 453px;
+  width: 49%;
+}
+
+.action__card-top {
+  height: 248px;
+  padding: 35px 15px;
+  position: relative;
+  -webkit-box-shadow: inset 0px -250px 87px -152px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: inset 0px -250px 87px -152px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px -250px 87px -152px rgba(0, 0, 0, 0.39);
+}
+
+.action__name {
+  font-family: "Gotham Pro Bold";
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 35px;
+}
+.action__card-top-left {
+  background-image: url(../img/action-img.png);
+}
+
+.action__card-top-right {
+  background-image: url(../img/action-img-1.png);
+}
+
+.form {
+  width: 28%;
 }
 
 @media (max-width: 768px) {
