@@ -224,6 +224,28 @@
   box-shadow: inset 0px -250px 87px -152px rgba(0, 0, 0, 0.39);
 }
 
+.action__card-bottom {
+  min-height: 175px;
+
+  padding: 20px 20px 40px 20px;
+  margin-bottom: 50px;
+
+  color: #48494a;
+  font-size: 14px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  -moz-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+}
+
+.action__date {
+  font-size: 12px;
+  color: #48494a;
+}
+
 .action__name {
   font-family: "Gotham Pro Bold";
   color: white;
@@ -241,6 +263,52 @@
 
 .form {
   width: 28%;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 120px;
+}
+
+.form__name {
+  color: #48494a;
+  font-size: 30px;
+  font-family: "Gotham Pro Bold";
+  margin-bottom: 15px;
+}
+
+.form__description {
+  color: #48494a;
+  font-size: 14px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+.form__input-txt {
+  color: #48494a;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  color: #a2a2a2;
+  font-size: 14px;
+  -webkit-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  -moz-box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  box-shadow: 0px 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+}
+
+.form__button {
+  background-color: red;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  max-width: 310px;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -261,6 +329,18 @@
     margin: auto;
     margin-bottom: 25px;
   }
+  .action__gallery {
+    flex-direction: column;
+  }
+  .action__card {
+    margin: auto;
+    width: 95%;
+  }
+
+  .form {
+    width: 100%;
+    padding-right: 80px;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -275,7 +355,37 @@
   .content__gallery-right {
     width: 100%;
   }
+
+  .content-promo {
+    flex-direction: column;
+  }
+
+  .action {
+    width: 100%;
+    padding: 50px 2.5%;
+  }
+
+  .action__gallery {
+    justify-content: space-around;
+  }
+
+  .content-promo {
+    width: 100%;
+  }
+  .content-promo::after {
+    display: none;
+  }
+
+  .form {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 370px) {
+  .form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
